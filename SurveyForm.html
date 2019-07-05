@@ -10,17 +10,54 @@
     <h1 id="title">SURVEY FORM</h1>
     <p id="description">Let us know how we can improve freeCodeCamp</p>
     <form id="survey-form">
-        <label for="name">*Name:</label>
-        <input type="text" id="name" name="username">
+        <label for="name-label">Name:</label>
+        <input type="text" id="name-label" name="username" placeholder="User name">
         <br>
         <br>
-        <label for="email">Email</label>
+        <label for="email-label">Email:</label>
         <!-- See link pattern https://www.w3schools.com/tags/att_input_pattern.asp-->
-        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="text" id="email-label" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email user">
         <br>
         <br>
+        <label for="number-label">Number:</label>
+        <input id="number-label" type="number" name="number" min="1" max="5" placeholder="Number" >
+        <br>
+        <br>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="Student">Student</option>
+            <option value="fulltimejob">Full Time Job</option>
+            <option value="fulltimelearner">Full Time Learner</option>
+        </select>
+        <br>
+        <br>
+        <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <br>
+        <input type="radio" name="recommend" value="definitely">
+        <label for="definitely">Definitely</label>
+        <br>
+        <input type="radio" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label>
+        <br>
+        <p>Things that should be improved in the future (Check all that apply):</p>
+        <label for="frontend">Front-End Projects</label>
+        <input type="checkbox" id="frontend" name="improve" value="frontend">
+        <label for="backend">Back-End Projects</label>
+        <input type="checkbox" id="backend" name="improve" value="backend">
+        <label for="datavis">Data Visualization</label>
+        <input type="checkbox" id="datavis" name="improve" value="datavis">
+        <br>
+        <label for="comments">Additional Comments</label>
+        <br>
+        <textarea id="comments" name="comments" rows="5" cols="10">Additional Comments here</textarea>
+        <br>
+        <input type="submit" value="Send" id="submit">
+        
+        
+        
 
     </form>
+    <script src="/static/js/bundle.js"></script>
     
     
 </body>
