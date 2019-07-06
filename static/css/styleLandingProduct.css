@@ -1,11 +1,14 @@
 #nav-bar{
     position:fixed;
     top:0px;
+    background-color: aliceblue;
+    width: 50%;
+    height: 10%;
 }
 
 /* Set the background color of body to tan */
 body {
-    background-color: tan;
+    background-color: rgb(241, 220, 220);
 }
   
 /* On screens that are 992px or less, set the background color to blue */
