@@ -3,9 +3,37 @@
     top:0px;
     background-color: aliceblue;
     width: 50%;
-    height: 10%;
+    height: 2%;
+}
+#flex-header{
+  display: flex;
 }
 
+#header-img{
+  order: 1;
+
+}
+#video{
+  order: 3;
+
+}
+#form{
+  order: 2;
+
+}
+
+#events-info{
+  display: flex;
+}
+#img-event1{
+  order: 2;
+  flex: 1;
+
+}
+#event1{
+  order: 1;
+  flex: 2;
+}
 /* Set the background color of body to tan */
 body {
     background-color: rgb(241, 220, 220);
