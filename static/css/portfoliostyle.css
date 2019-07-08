@@ -1,0 +1,44 @@
+/* Set the background color of body to tan */
+body {
+    background-color: rgb(241, 220, 220);
+}
+  
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+}
+  
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+}
+
+#welcome-section{
+    height: 100vh;
+}
+
+#navbar{
+    justify-content: flex-end;
+    position:fixed;
+    top:0px;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rebeccapurple;
+}
+
+#name{
+    text-align: center;
+    font-size: 100px;
+}
+
+#nav-link {
+    background-color: aliceblue;
+    border: 15px;
+    width: 10%;
+
+}
